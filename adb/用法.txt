@@ -1,0 +1,16 @@
+adb connect 10.10.45.43   //连接
+adb shell  //打开shell
+pm list packages  //用这个获取包的名称，好像是com.lezhixing.wisdomscreen
+pm disable-user <name>
+adb devices //usb连接
+pm enable <name>//恢复工作
+
+dumpsys window | grep mCurrentFocus 查看前台活动名
+
+am start -n com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity 开启活动
+
+com.tencent.mm/com.tencent.mm.ui.LauncherUI 微信act
+
+input tap 1009 99
+
+input tap 915 556
