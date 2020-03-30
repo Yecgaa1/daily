@@ -13,16 +13,16 @@ import sys,os,configparser
 from send import login,ConnectTest
 from config import config
 
+name=""
 
-ipset=config("u","server","add")
-portset=config("u","server","port")
+1
 
 class Ui_chooseserver(QWidget):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-
-    def testserver(self):
+11a     1a1AA||a
+    def testserver(self):1
         serverversion=ConnectTest()
         print(serverversion)
         if serverversion!=404:
