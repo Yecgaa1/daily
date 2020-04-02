@@ -3,17 +3,23 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:\\Users\\星星\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
-                "C:\\Users\\星星\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.2\\**",
-                "E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include",
                 "E:\\Program Files (x86)\\Arduino\\tools\\**",
                 "E:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\**",
-                "E:\\Program Files (x86)\\Arduino\\libraries\\**",
-                "C:\\Users\\星星\\AppData\\Local\\Arduino15\\packages\\**",
-                "C:\\Users\\star\\Documents\\Arduino\\**"
+                "C:\\Users\\star\\Documents\\Arduino\\**",
+                "C:\\Users\\星星\\AppData\\Local\\Arduino15\\**",
+                "C:\\Users\\星星\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.6.3\\**",
+                "C:\\Users\\星星\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "E:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include",
+                "E:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\5.4.0\\include",
+                "E:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
             ],
-            "forcedInclude": [],
-            "intelliSenseMode": "msvc-x64"
+            "forcedInclude": [
+                "E:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "defines": [
+                "USBCON"
+            ]
         }
     ],
     "version": 4
