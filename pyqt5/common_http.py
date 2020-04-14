@@ -21,7 +21,6 @@ class Ui_chooseserver(QWidget):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-11a     1a1AA||a
     def testserver(self):1
         serverversion=ConnectTest()
         print(serverversion)
