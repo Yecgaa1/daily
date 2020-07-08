@@ -52,8 +52,8 @@ class Ui_New(QWidget):
 
     def statecheck(self):
         global i
-        if i==0:
-            i=10
+        if i == 0:
+            i = 10
         while i > 0:
             req = requests.get("https://api.vultr.com/v1/server/list", headers=headers, timeout=3)
             if req.status_code != 200:
@@ -65,7 +65,7 @@ class Ui_New(QWidget):
             except:
                 self.imf.setText('开机没成功')
             time.sleep(10)
-            i-=1
+            i -= 1
         return
 
     def run(self):
