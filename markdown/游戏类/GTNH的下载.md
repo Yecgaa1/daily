@@ -64,7 +64,9 @@ Java8_261
 
 请看作者原话：
 
+![](C:\GitProject\daily\markdown\游戏类\图片\GTNH的安装\1.3.PNG)
 
+![](C:\GitProject\daily\markdown\游戏类\图片\GTNH的安装\1.2.PNG)
 
 在
 
