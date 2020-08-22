@@ -4,13 +4,11 @@ import socket  # 导入 socket 模块
 import time
 
 s = socket.socket()  # 创建 socket 对象
-port = ("127.0.0.1",19151)  # 设置端口
+port = ("127.0.0.1", 19151)  # 设置端口
 
 from pycaw.pycaw import AudioUtilities
 
 import keyboard
-
-
 
 
 class AudioController(object):
@@ -44,7 +42,6 @@ class AudioController(object):
 
 
 def run(state):
-
     if state == '2':
         audio_controller.mute()
         keyboard.send("play/pause media")
@@ -52,7 +49,6 @@ def run(state):
     else:
         keyboard.send("play/pause media")
         audio_controller.unmute()
-
 
 
 if __name__ == '__main__':
@@ -67,8 +63,8 @@ if __name__ == '__main__':
         c.send('欢迎来到智乃酱的书房！'.encode())
         while 1:
             a = c.recv(1024).decode()
-            if a!="":
+            if a != "":
                 run(a)
-                a=""
+                a = ""
             else:
                 time.sleep(1)

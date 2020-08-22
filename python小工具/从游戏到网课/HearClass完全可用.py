@@ -4,13 +4,11 @@ import socket  # 导入 socket 模块
 import time
 
 s = socket.socket()  # 创建 socket 对象
-port = ("192.168.31.54",19151)  # 设置端口
+port = ("192.168.31.54", 19151)  # 设置端口
 
 from pycaw.pycaw import AudioUtilities
 
-import keyboard
 from selenium import webdriver
-
 
 
 class AudioController(object):
@@ -44,7 +42,6 @@ class AudioController(object):
 
 
 def run(state):
-
     if state == '2':
         audio_controller.mute()
         driver.find_element_by_class_name("bilibili-player-video").click()
@@ -54,7 +51,6 @@ def run(state):
         audio_controller.unmute()
 
 
-
 if __name__ == '__main__':
     audio_controller = AudioController('RainbowSix.exe')
 
@@ -62,15 +58,14 @@ if __name__ == '__main__':
     driver = webdriver.Chrome()
 
     s.listen(5)  # 等待客户端连接
-    print(1)
     while True:
         c, addr = s.accept()  # 建立客户端连接
         print('连接地址：', addr)
         c.send('欢迎来到智乃酱的书房！'.encode())
         while 1:
             a = c.recv(1024).decode()
-            if a!="":
+            if a != "":
                 run(a)
-                a=""
+                a = ""
             else:
                 time.sleep(1)

@@ -6,9 +6,8 @@ https://github.com/AndreMiras/pycaw/blob/develop/examples/audio_controller_class
 
 from __future__ import print_function
 
-from pycaw.pycaw import AudioUtilities
-
 import keyboard
+from pycaw.pycaw import AudioUtilities
 
 state = 0
 
