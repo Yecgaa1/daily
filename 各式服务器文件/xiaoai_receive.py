@@ -1,7 +1,6 @@
 # code:utf-8
 from flask import Flask, redirect, url_for, session, request, send_from_directory, abort, make_response
 import json, os, hashlib, time, shutil
-from flask_uploads import UploadSet, configure_uploads, ALL, patch_request_class
 
 app = Flask(__name__)
 Version = "0.0.1b"
